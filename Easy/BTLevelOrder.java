@@ -47,7 +47,7 @@ class BTLevelOrder {
                 if (n.left != null) queue.add(n.left);
                 if (n.right != null) queue.add(n.right);
             }
-            res.add(curLevel);
+            res.add(0,curLevel); //reversal return
         }
 
         return res;
