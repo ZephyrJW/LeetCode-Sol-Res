@@ -47,7 +47,7 @@ class BTLevelOrder {
                 if (n.left != null) queue.add(n.left);
                 if (n.right != null) queue.add(n.right);
             }
-            res.add(0,curLevel); //reversal return
+            res.add(curLevel); //reversal return: res.add(0,curLevel)  Leetcode no.107
         }
 
         return res;
